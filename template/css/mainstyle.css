@@ -1,0 +1,397 @@
+body {
+	/*background-color: 000000;*/
+	background-image: url("../images_for_toys/puzyri_fon.jpg");
+	font-family: "MyriadProRegular";
+
+
+}
+
+
+.logo, .nav-k img, .section img{
+	display: none;
+}
+
+@media (min-width: 992px) {
+
+.price {
+	font-size: 30px;
+}
+
+}
+
+@media (min-width: 768px) {
+
+	.nav-fon {
+		background-color: transparent;
+		border: none;
+	}
+
+	.nav-header-width {
+		width: 30%;
+	}
+
+	.logo {
+		display: block;
+		float: left;
+		width: 100%;
+		height: auto;
+		margin-top: 20px;
+	}
+
+	.nav-width {
+		width: 70%;
+	}
+
+	ul.nav li.nav-color > a {
+		color: #ff9933;
+		text-decoration: none;
+	}
+
+	ul.nav li.nav-color > a:hover {
+		color: #71bf44;
+		text-decoration: underline;
+	}
+
+	.nav-tlf {
+		width: 42%;
+		font-size: 22px;
+		padding-top: 20px;
+	}
+
+	li.nav-tlf {
+		display: inline-block;
+	}
+
+	.nav-input {
+		width: 15%;
+		font-size: 15px;
+		padding-top: 20px;
+	}
+
+	.nav-reg {
+		width: 26%;
+		font-size: 15px;
+		padding-top: 20px;
+	}
+
+	.nav-vk, .nav-in {
+		margin-right: -3%;
+		padding-top: 20px;
+	}
+
+	.nav-search {
+		width: 50%;
+	}
+
+	ul.nav li.nav-q {
+		width: 20%;
+		background-color: #71bf44;
+		border-radius: 5px;
+	}
+
+
+	ul.nav li.nav-q a {
+		font-size: 22px;
+		text-decoration: none;
+		color: black;
+	}
+
+	ul.nav li.nav-q a:hover {
+		color: white;
+	}
+
+	#question {
+		font-size: 18px;
+		background-color: #71bf44;
+		color: black;
+	}
+
+	#question:hover {
+		background-color: #5DE401;
+	}
+
+	.nav-k img {
+		display: inline-block;
+		height: 45px;
+	}
+
+	.search {
+		border: solid #71bf44 2px;
+		margin: 20px;
+		width: 80%;
+	}
+
+	.nav-menu {
+		margin-top: 20px;
+		width: 100%;
+	}
+
+	.nav-menu li {
+		border-radius: 10px 10px 0 0;
+		background-color: #fb863d;
+		width: 16%;
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+		color: black;
+	}
+
+	.nav-menu li:hover {
+		position: relative;
+		bottom: 10px;
+		height: 60px; /*нижестоящие блоки смещаются из-за увеличения высоты блока*/
+		margin-bottom: -10px; /*поэтому делаем для него отрицательный маргин на ту же высоту*/
+		background-color: #ee5d03; /*ну и немножко фон поярче*/
+	}
+
+	.nav-menu li > a {
+		color: black !important;
+	}
+
+	.nav-menu li > a:hover {
+		color: white !important;
+	}
+
+	.section {
+		margin: 30px 0 30px -20px;
+		background-color: #71bf44; /*сделал заливку зелёного цвета для всего блока*/
+		border-radius: 5px; /*закругляем наружные углы блока section */
+	}
+
+	.section .col-sm-4 {
+		border: solid #71bf44 15px;
+		text-align: center;
+		padding: 5px;
+		border-radius: 30px; /*закругляем все внутренние углы */
+		background-color: white; /*перезаливаем фон на белый, т.к. блока section залит зелёным*/
+	}
+
+	.sect {
+		font-style: italic;
+		font-weight: bold;
+		font-size: 38px;
+		margin-top: 20px;
+	}
+
+	a.greentext {
+		color: #51F928;
+	}
+
+	a.orangetext {
+		color: #FE830A;
+	}
+
+	a.redtext {
+		color: #FE0104;
+	}
+
+	.section img {
+		display: inline-block;
+		margin-bottom: 20px;
+		height: 140px;
+	}
+
+	h2.category_title {
+		font-size: 34px;
+		font-weight: bolder;
+		color: #FC5F04;
+		text-align: center;
+		background-color: white;
+	}
+
+	.catalog_title {
+		font-size: 24px;
+		font-weight: bolder;
+		color: #FC5F04;
+		background-color: white;
+	}
+
+	.category {
+		background-color: #71bf44;
+		font-size: 20px;
+
+	}
+
+	a.category {
+		color: black;
+	}
+
+	.for {
+		font-size: 24px;
+		color: #FC5F04;
+		margin-left: -25px;
+	}
+
+	.for:hover, .sort:hover {
+		color: #71bf44;
+	}
+
+	/*.sort {*/
+		/*font-size: 14px;*/
+		/*color: #FC5F04;*/
+		/*margin-bottom: 20px;*/
+	/*}*/
+
+	.sort {
+		margin:20px 0px 0px 20px;
+	}
+	.sort span {
+		color:blue;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	#fon {
+		display:none;
+		opacity:0.8;
+		position:absolute;
+		height:100%;
+		z-index:100;
+		background-color:white
+	}
+	#load {
+		background-image: url("images_for_css/loading17.gif");
+		position:absolute;
+		left:48%;
+		top:25%;
+		width:65px;
+		height:65px;
+		z-index:150;
+		display:none;
+	}
+
+	.content {
+		margin-bottom: 100px;
+	}
+
+	.article {
+		position: relative;
+		padding: 0;
+		margin: 0 -30px -10px -10px;
+		border: dashed green 1px;
+	}
+
+	.product {
+		width: 100%;
+		text-align: center;
+		font-size: 20px;
+		margin: 20px 0;
+	}
+
+	.product a {
+		color: black;
+		text-decoration: underline;
+	}
+
+	#thumbnail_img {
+		margin-top: 5%;
+		height: 120px;
+		width: auto;
+	}
+
+	img.new, img.sale, img.hits {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 25%;
+	}
+
+	.price {
+		width: 100%;
+		position: relative;
+		text-align: center;
+		font-size: 20px;
+		color: black;
+
+	}
+
+	.price1 {
+		display: inline-block;
+		width: 40%;
+		text-decoration: line-through;
+		position: relative;
+		left: 10%;
+		top: -5px;
+	}
+
+	.sale {
+		display: inline-block;
+		width: 40%;
+		position: relative;
+		color: green;
+		left: 10%;
+		top: -5px;
+
+	}
+
+	.article-btn {
+		position: relative;
+		bottom: 10px;
+		width: 50%;
+		margin: 20px 0 30px 0;
+		left: 25%;
+		border-radius: 15px;
+
+	}
+
+	.article-btn img {
+		width: 50px;
+		height: auto;
+	}
+
+	/* изменение стилей блока с корзиной */
+	div.thumbnail .btn-warning {
+		background-color: white;
+		border: 2px solid #eea236;
+	}
+	div.thumbnail .btn-warning:hover {
+		border: 2px solid #ee5d03;
+		box-shadow: 0 0 30px #ee5d03; /* тень */
+	}
+
+	.footer {
+		border: solid #71bf44 8px;
+		margin-bottom: 50px;
+	}
+
+	.foot {
+		border-right: solid #71bf44 2px;
+	}
+
+	.footer a {
+		font-size: 14px;
+	}
+
+	.romb {
+		width: 40px;
+	}
+}
+
+@media (min-width: 992px) {
+
+    .price {
+        font-size: 30px;
+    }
+
+    #thumbnail_img {
+        margin-top: 10%;
+        height: 200px;
+    }
+
+    .footer a {
+        font-size: 18px;
+    }
+
+    .nav-tlf:hover {
+        font-size: 34px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
